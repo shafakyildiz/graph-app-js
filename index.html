@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Visualization App</title>
+  </head>
+  <body>
+    <main>
+      <div id="button-container">
+        <button type="button" class="btn btn-primary" onclick="changeGraph()">
+          Change the graph
+        </button>
+      </div>
+
+      <div class="container">
+        <div id="chart">
+          <canvas id="myChart" width="auto" height="auto"></canvas>
+        </div>
+        <br /><br />
+        <table class="table table-striped table-hover center" id="table">
+          <div id="table-info">
+            <thead class="thead-dark">
+              <tr>
+                <th>Date</th>
+                <th>Clicks</th>
+                <th>Impressions</th>
+                <th>Installs</th>
+                <th>DAU</th>
+                <th>App</th>
+                <th>Platform</th>
+              </tr>
+            </thead>
+            <tbody id="data"></tbody>
+          </div>
+        </table>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.js"
+      integrity="sha512-CAv0l04Voko2LIdaPmkvGjH3jLsH+pmTXKFoyh5TIimAME93KjejeP9j7wSeSRXqXForv73KUZGJMn8/P98Ifg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
